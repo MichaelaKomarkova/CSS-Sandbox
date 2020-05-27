@@ -1,0 +1,22 @@
+In The Beginning:
+    - Floats were heavily used to design web pages.
+    - Then bootstrap came out with their grid system.
+    - Later on CSS Flexbox was created as an even easier way build UI layouts.
+        - CSS Grid is also used to build UI layouts.
+
+Flexbox:
+    - The 'flex' value is set via the **display** property.
+    - Flexbox replaces floats & it's much more elegant to work with.
+    - You can align items horizontally (rows) or vertically (columns).
+    - Flex items can be reordered via CSS.
+
+How To Use:
+    - Declare 'display: flex' to create a flex container.
+    - All direct child elements will then be considered 'flex items'.
+
+Flexbox Layout:
+    - Main axis (x) & Cross axis (y).
+    - justify-content -> align along the main axis (horizontal).
+    - align-items -> align items along the cross axis (vertical).
+    - align-content -> align when there's extra space in the cross axis (vertical).
+    

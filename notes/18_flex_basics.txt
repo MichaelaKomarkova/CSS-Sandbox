@@ -1,7 +1,7 @@
 In The Beginning:
     - Floats were heavily used to design web pages.
     - Then bootstrap came out with their grid system.
-    - Later on CSS Flexbox was created as an even easier way build UI layouts.
+    - Later on CSS Flexbox was created as an even easier way to build UI layouts.
         - CSS Grid is also used to build UI layouts.
 
 Flexbox:

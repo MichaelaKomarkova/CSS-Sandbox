@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility, Order & Negative Margin</title>
+    <style>
+        .hello {
+            /* 
+            Targeting a class overrides targeting the actual html element.
+                - you would think that the h1 would be overridden to blue.
+                - this is because it appears lower down in the css.
+                - turns out the <h1> will be red here due to targeting the class. 
+            */
+            color: red;
+
+            /* 
+            You can use negative margin values but they should be avoided if possible. 
+                - 'padding' can't have negative values (only 'margin' can).
+            */
+            margin-top: -30px;
+            margin-left: -30px;
+        }
+
+        h1 {
+            /* 
+            'display: none' Removes the element from the browser completely.
+                - good for building responsive applications.
+                - ex: you might not want to show an element on mobile devices.
+             */
+            /* display: none; */
+
+            /* 
+            Hides an html element on the page.
+                - note: space is still allocated to the div in the browser here.
+                - 'display: none' is used much more often.
+            */
+            /* visibility: hidden; */
+
+            /* Overridden by target the '.hello' class above. */
+            color: blue;
+
+            /* 
+            The '!important' flag overrides all other property declarations.
+                - '!important' is used when dealing with a lot of CSS files.
+                - you can use this when pulling in complex external style sheets etc. 
+             */
+            color: green !important;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="hello">Hello World</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        Aliquid suscipit atque laborum, nihil provident consectetur!
+    </p>
+</body>
+
+</html>

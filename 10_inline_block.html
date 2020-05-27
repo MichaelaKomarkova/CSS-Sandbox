@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Inline & Block Styling</title>
+  <style>
+    /* Changes block level <li> elements to inline */
+    li {
+      display: inline;
+    }
+
+    li a {
+      padding-right: 20px;
+    }
+
+    /* <img> is inline by default (i.e. doesn't take up the full line) */
+    img {
+      /* Setting to 'margin: auto' centers the <img>*/
+      /* The element must be 'display: block' to center with 'margin: auto' */
+      margin: auto;
+      display: block;
+    }
+
+    /* Inline block align elements horizontally */
+    /* BUT it allows us to add 'width: x' */
+    .box {
+      display: inline-block;
+      /* Include padding & border in the elements total width & height */
+      box-sizing: border-box;
+      background: #f4f4f4;
+      padding: 20px;
+      margin-bottom: 15px;
+      width: 32.8%;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- List items (<li>) are block level by default 
+    (hence the new line) -->
+  <!-- Block level means that the element will take up all space on a line -->
+  <ul>
+    <li><a href="#">Technology</a></li>
+    <li><a href="#">Business</a></li>
+    <li><a href="#">Fashion</a></li>
+  </ul>
+
+  <br><br>
+
+  <img src="./img/leaf.png" alt="My image">
+
+  <br><br>
+
+  <div class="box">
+    <h3>Heading</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur est dolore minima enim sunt culpa odit
+      voluptatum et quis doloremque?</p>
+  </div>
+  <div class="box">
+    <h3>Heading</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur est dolore minima enim sunt culpa odit
+      voluptatum et quis doloremque?</p>
+  </div>
+  <div class="box">
+    <h3>Heading</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur est dolore minima enim sunt culpa odit
+      voluptatum et quis doloremque?</p>
+  </div>
+
+</body>
+
+</html>
